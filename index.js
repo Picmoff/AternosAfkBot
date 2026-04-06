@@ -50,22 +50,7 @@ bot.on('login', function () {
         task(i);
     }
     console.log("Logged In")
-    bot.chat("hello");
 });
-
-function task(i) {
-
-    setTimeout(function () {
-        if (first == true) {
-            bot.chat("Support the Project https://github.com/healer-op/AternosAfkBot staring it")
-            first = false;
-        } else {
-            bot.chat("Support the Project https://github.com/healer-op/AternosAfkBot staring it")
-            first = true;
-        }
-    }, 3600000 * i);
-}
-
 
 bot.on('time', function (time) {
 
